@@ -6,7 +6,7 @@ SQL, which stands for `Structured Query Language`, is a language for interacting
 You can think of a relational database as a collection of tables. A table is just a set of rows and columns, like a spreadsheet, which represents exactly one type of entity.
 
 Each row, or record, of a table contains information about a single entity. Each column, or field, of a table contains a single attribute for all rows in the table.
-
+____________________________________________________________________________________________________________________________________________
 ### Basic Queries:
 #### 1. SELECTing single columns
 
@@ -29,7 +29,7 @@ from people;
 That said, it's good practice to make SQL keywords uppercase to distinguish them from other parts of your query, like column and table names.
 
 It's also good practice to include a semicolon at the end of your query. This tells SQL where the end of your query is!
-
+____________________________________________________________________________________________________________________________________________
 #### 2. SELECTing multiple columns
 Well done! Now you know how to select single columns.
 
@@ -54,7 +54,7 @@ SELECT *
 FROM people
 LIMIT 10;
 ```
-
+____________________________________________________________________________________________________________________________________________
 #### 3. SELECT DISTINCT
 
 Often your results will include many duplicate values. If you want to select all the unique values from a column, you can use the DISTINCT keyword.
@@ -63,6 +63,7 @@ Often your results will include many duplicate values. If you want to select all
 SELECT DISTINCT language
 FROM films;
 ```
+____________________________________________________________________________________________________________________________________________
 #### 4. Learning to COUNT
 The COUNT statement lets you do this by returning the number of rows in one or more columns.
 
@@ -71,7 +72,7 @@ For example, this code gives the number of rows in the people table:
 SELECT COUNT(*)
 FROM people;
 ```
-
+____________________________________________________________________________________________________________________________________________
 #### 5. Practice with COUNT
 As you've seen, COUNT(*) tells you how many rows are in a table. However, if you want to count the number of non-missing values in a particular column, you can call COUNT on just that column.
 
@@ -86,7 +87,7 @@ For example, this query counts the number of distinct birth dates contained in t
 SELECT COUNT(DISTINCT birthdate)
 FROM people;
 ```
-
+____________________________________________________________________________________________________________________________________________
 #### 6. Filtering results
 Congrats on finishing the first chapter! You now know how to select columns and perform basic counts. This chapter will focus on filtering your results.
 
