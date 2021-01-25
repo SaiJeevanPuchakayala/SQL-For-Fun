@@ -159,8 +159,7 @@ FROM films
 WHERE release_year > 1994 AND < 2000;
 ```
 You can add as many AND conditions as you need!
-                          
-            ____________________________________________________________________________________________________________________________________________
+____________________________________________________________________________________________________________________________________________
                           
 #### 10. WHERE AND OR
 What if you want to select rows based on multiple conditions where some but not all of the conditions need to be met? For this, SQL has the OR operator.
